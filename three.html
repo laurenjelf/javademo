@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>grades</title>
+
+    </head>    
+
+     <body>
+
+     <script>
+
+        let analysis = Number(prompt("Enter analysis mark out of 25:"));
+
+let design = Number(prompt("Enter design mark out of 25:"));
+
+let implementation = Number(prompt("Enter implementation mark out of 25:"));
+
+let evaluation = Number(prompt("Enter evaluation mark out of 25:"));
+
+ 
+
+let total = analysis + design + implementation + evaluation;
+
+let grade;
+
+let nextMark;
+
+ 
+
+switch (true) {
+
+    case total >= 80:
+
+        grade = "A*";
+
+        nextMark = 0;
+
+        break;
+
+    case total >= 67:
+
+        grade = "A";
+
+        nextMark = 80 - total;
+
+        break;
+
+    case total >= 54:
+
+        grade = "B";
+
+        nextMark = 67 - total;
+
+        break;
+
+    case total >= 41:
+
+        grade = "C";
+
+        nextMark = 54 - total;
+
+        break;
+
+    case total >= 31:
+
+        grade = "D";
+
+        nextMark = 41 - total;
+
+        break;
+
+    case total >= 22:
+
+        grade = "E";
+
+        nextMark = 31 - total;
+
+        break;
+
+    case total >= 13:
+
+        grade = "F";
+
+        nextMark = 22 - total;
+
+        break;
+
+    case total >= 4:
+
+        grade = "G";
+
+        nextMark = 13 - total;
+
+        break;
+
+    default:
+
+        grade = "U";
+
+        nextMark = 4 - total;
+
+}
+
+ 
+
+alert("Total mark: " + total +
+
+      "\nGrade: " + grade +
+
+      (total < 80
+
+        ? "\nMarks needed for next grade: " + nextMark
+
+        : "\nYou achieved the highest grade!"));
+
+ 
+
+       
+
+        </script>
+
+        </body>
+
+        </html>

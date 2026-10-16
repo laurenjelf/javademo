@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+
+        interest!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    </title>
+
+</head>
+
+<body>
+
+    <script>
+
+        let balance = Number(prompt("Enter current balance:"));
+
+let rate = Number(prompt("Enter interest rate (e.g. 0.04 for 4%):"));
+
+let target = Number(prompt("Enter desired balance:"));
+
+ 
+
+let years = 0;
+
+ 
+
+if (balance >= target) {
+
+    alert("You have already reached your desired balance.");
+
+} else if (balance <= 0 || rate <= 0) {
+
+    alert("Enter a positive balance and an interest rate greater than 0.");
+
+} else {
+
+    while (balance < target) {
+
+        balance = balance * (1 + rate);
+
+        years = years + 1;
+
+    }
+
+ 
+
+    alert("Years needed: " + years +
+
+          "\nFinal balance: " + balance.toFixed(2));
+
+}
+
+ 
+
+    </script>
+
+</body>
+
+</html>
+
+ 

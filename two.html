@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Task1</title>
+
+    </head>
+
+    <body>
+
+        <input type="number" id="num1" value="0">
+
+        <input type="number" id="num2" value="0">
+
+        <button onclick="addNumbers()">adding numbers</button>
+
+        <p id="result">Answer here!</p>
+
+        <script>
+
+            function addNumbers(){
+
+                var number1 = parseFloat(document.getElementById("num1").value);
+
+                var number2 = parseFloat(document.getElementById("num2").value);
+
+                var sum = number1 + number2;
+
+                placetoput = document.getElementById("result");
+
+                placetoput.innerHTML = "numbers add to: "+sum;
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
